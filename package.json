@@ -1,0 +1,12 @@
+{
+  "name": "linked-lists---top",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Project to build classes to use a linked list",
+  "main": "script.js",
+  "scripts": {
+    "start": "node script.js"
+  },
+  "author": "Ivo S.",
+  "license": "ISC"
+}
