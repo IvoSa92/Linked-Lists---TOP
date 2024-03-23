@@ -9,5 +9,8 @@ myLinkedList.append(24);
 myLinkedList.prepend(100);
 //showList(myLinkedList);
 
-//console.log(myLinkedList);
-console.log(myLinkedList.at(2));
+console.log(myLinkedList);
+//console.log(myLinkedList.at(2));
+console.log(myLinkedList.pop());
+
+console.log(myLinkedList);

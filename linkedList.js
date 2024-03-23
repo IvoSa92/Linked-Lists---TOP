@@ -62,6 +62,24 @@ class LinkedList {
 
     return current;
   }
+
+  pop() {
+    if (this.size === 0) {
+      return "No items in list";
+    }
+
+    let current = this.head;
+
+    for (let index = 0; index < this.size - 2; index++) {
+      current = current.nextNode;
+    }
+
+    this.tail = current;
+    this.tail.nextNode = null;
+    this.size--;
+
+    return current;
+  }
 }
 
 export default LinkedList;
