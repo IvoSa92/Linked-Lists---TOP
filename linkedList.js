@@ -70,15 +70,29 @@ class LinkedList {
 
     let current = this.head;
 
-    for (let index = 0; index < this.size - 2; index++) {
+    while (current.nextNode !== this.tail) {
       current = current.nextNode;
     }
 
+    const toReturn = this.tail;
     this.tail = current;
     this.tail.nextNode = null;
     this.size--;
 
-    return current;
+    return toReturn;
+  }
+
+  contains(value) {
+    let current = this.head;
+
+    while (current !== null) {
+      if (current.value === value) {
+        return true;
+      }
+      current = current.nextNode;
+    }
+
+    return false;
   }
 }
 
