@@ -94,6 +94,36 @@ class LinkedList {
 
     return false;
   }
+
+  find(value) {
+    let current = this.head;
+    let counter = 0;
+    let result;
+
+    while (current !== null) {
+      if (current.value === value) {
+        result = `${current.value}, ${counter}`;
+        return result;
+      }
+      current = current.nextNode;
+      counter++;
+    }
+    return null;
+  }
+
+  toString() {
+    let current = this.head;
+    let string = "";
+
+    while (current !== null) {
+      if (current.value !== null) {
+        string += `(${current.value})->`;
+      }
+      current = current.nextNode;
+    }
+    string += "null";
+    console.log(string);
+  }
 }
 
 export default LinkedList;

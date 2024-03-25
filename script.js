@@ -8,4 +8,4 @@ myLinkedList.append(25);
 myLinkedList.append(24);
 myLinkedList.prepend(100);
 
-console.log(myLinkedList.contains(23));
+console.log(myLinkedList.toString());
